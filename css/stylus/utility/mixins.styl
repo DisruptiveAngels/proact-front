@@ -1,0 +1,21 @@
+// Wrapp without another div
+wrapped($n = 1120px)
+  padding-left 'calc(50% - (%s / 2))' % $n
+  padding-right 'calc(50% - (%s / 2))' % $n
+  
+// Wrapp just left side
+wrapped-left($n = 1120px)
+  padding-left 'calc(50% - (%s / 2))' % $n
+
+// Wrapp just left side
+wrapped-right($n = 1120px)
+  padding-right 'calc(50% - (%s / 2))' % $n
+  
+// Soft Shadow
+shadow()
+  box-shadow 0 10px 20px 0 rgba(0, 0, 0, .1)
+  
+// Device sizes
+$desktop = 1120px
+$tablet = 800px
+$mobile = 600px
