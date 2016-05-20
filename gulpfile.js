@@ -46,10 +46,14 @@ gulp.task('server', function() {
 
 // Stylus Task - Compiles stylus file
 gulp.task('stylus', function() {
+  var stylus_options = {
+    use : [     
+        rupture()
+    ]
+  }
+  
   return gulp.src(paths.styles)
-    .pipe(stylus({
-      use: [rupture()]
-    }))
+    .pipe(stylus(stylus_options))
     .pipe(gulp.dest(paths.css))
 });
 

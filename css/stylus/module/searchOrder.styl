@@ -1,0 +1,22 @@
+.searchOrder
+  font-size 13px
+  
+  +below($desktop)
+    text-align center
+  
+  .input
+    shadow()
+    padding .5rem 3rem
+    appearance none
+    border 0
+    border-radius 4px
+  
+    &--search
+      margin-right 1rem
+      background white url('/img/icon-search.png') 5% center no-repeat
+      
+      +below($desktop)
+        margin-right 0
+        margin-bottom 1rem
+        width 100%
+        text-align center

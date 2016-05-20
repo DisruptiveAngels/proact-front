@@ -1,0 +1,29 @@
+.card-orderTracking
+  float right
+  width 59%
+
+  +below($tablet)
+    float none
+    width 100%
+  
+  &-shippment
+    float left
+    
+    +below($desktop)
+      width 50%
+    
+  &-destination
+    float right
+    text-align right
+
+    +below($desktop)
+      width 50%
+    
+.orderAttached
+  font-weight 700
+  color $blue-dark
+  margin-right 1rem
+  
+  +below($tablet)
+    display block
+    margin 1rem

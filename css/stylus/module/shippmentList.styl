@@ -1,0 +1,57 @@
+.shipmentList
+  margin 0
+  padding 0
+  list-style none
+  
+  &-item
+    margin-bottom 1rem
+    border-radius 4px
+    opacity .5
+    background-color $grey
+    transition all 350ms ease-in-out
+    
+    a
+      display block
+      clear fix
+      padding .5rem 1rem
+      color white
+      
+    
+    &:last-child
+      margin-bottom 0
+    
+    &.active
+      opacity 1
+      background-color $green
+      
+    &:hover
+      opacity 1
+  
+.shippment
+  float left
+  
+  &-icon
+    margin-top 3px
+    width 10%
+    
+  &-number
+    width 20%
+
+  &-origin
+    width 40%
+    text-align right
+
+  &-date
+    width 30%
+    text-align right
+
+  &-tag
+    margin-top 0
+    margin-bottom 0
+    text-transform uppercase
+    font-weight bold
+    font-size 11px
+  
+  &-data
+    margin-top 0
+    margin-bottom 0
