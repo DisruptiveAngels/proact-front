@@ -232,23 +232,16 @@ body {
 .alert-message {
   margin: 0;
 }
-.container:after {
-  content: '';
-  display: block;
-  clear: both;
-}
 .container {
+  overflow: hidden;
   margin-right: auto;
   margin-left: auto;
+  min-height: 200px;
   max-width: 1440px;
   width: 95%;
 }
-.container-header:after {
-  content: '';
-  display: block;
-  clear: both;
-}
 .container-header {
+  overflow: hidden;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
@@ -285,19 +278,51 @@ body {
   color: #fff;
   font-size: 12px;
 }
+.searchOrder {
+  font-size: 13px;
+}
+@media only screen and (max-width: 1200px) {
+  .searchOrder {
+    text-align: center;
+  }
+}
+.searchOrder .input {
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.12);
+  padding: 0.5rem 3rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  border-radius: 4px;
+}
+.searchOrder .input--search {
+  margin-right: 1rem;
+  background: #fff url("/img/icon-search.png") 5% center no-repeat;
+}
+@media only screen and (max-width: 1200px) {
+  .searchOrder .input--search {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+.searchOrder--index .input--search {
+  margin-right: 0;
+  margin-bottom: 1rem;
+  box-shadow: none;
+  border: 1px solid rgba(50,170,230,0.5);
+}
 .card {
   box-shadow: 0 3px 6px 0 rgba(0,0,0,0.12);
+  overflow: hidden;
   margin-bottom: 2rem;
   border-radius: 0.25rem;
   background-color: #fff;
 }
-.card-header:after {
-  content: '';
-  display: block;
-  clear: both;
-}
 .card-header {
   padding: 1.25rem;
+  overflow: hidden;
   border-bottom: 2px solid #f2f7f6;
 }
 .card-header-data {
@@ -350,11 +375,11 @@ body {
     width: 100%;
   }
 }
-.card-orderTracking-shippment {
+.card-orderTracking-shipment {
   float: left;
 }
 @media only screen and (max-width: 1200px) {
-  .card-orderTracking-shippment {
+  .card-orderTracking-shipment {
     width: 50%;
   }
 }
@@ -378,6 +403,15 @@ body {
     margin: 1rem;
   }
 }
+.card-searchOrder {
+  overflow: hidden;
+  margin-top: 10rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2rem;
+  max-width: 400px;
+  text-align: center;
+}
 .shipmentList {
   margin: 0;
   padding: 0;
@@ -390,13 +424,9 @@ body {
   background-color: #bebebe;
   transition: all 350ms ease-in-out;
 }
-.shipmentList-item a:after {
-  content: '';
-  display: block;
-  clear: both;
-}
 .shipmentList-item a {
   display: block;
+  overflow: hidden;
   padding: 0.5rem 1rem;
   color: #fff;
 }
@@ -410,41 +440,37 @@ body {
 .shipmentList-item:hover {
   opacity: 1;
 }
-.shippment {
+.shipment {
   float: left;
 }
-.shippment-icon {
+.shipment-icon {
   margin-top: 3px;
   width: 10%;
 }
-.shippment-number {
+.shipment-number {
   width: 20%;
 }
-.shippment-origin {
+.shipment-origin {
   width: 40%;
   text-align: right;
 }
-.shippment-date {
+.shipment-date {
   width: 30%;
   text-align: right;
 }
-.shippment-tag {
+.shipment-tag {
   margin-top: 0;
   margin-bottom: 0;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 11px;
 }
-.shippment-data {
+.shipment-data {
   margin-top: 0;
   margin-bottom: 0;
 }
-.clientInfo:after {
-  content: '';
-  display: block;
-  clear: both;
-}
 .clientInfo {
+  overflow: hidden;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -514,33 +540,4 @@ body {
 .table-order td:last-child {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
-}
-.searchOrder {
-  font-size: 13px;
-}
-@media only screen and (max-width: 1200px) {
-  .searchOrder {
-    text-align: center;
-  }
-}
-.searchOrder .input {
-  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.12);
-  padding: 0.5rem 3rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border: 0;
-  border-radius: 4px;
-}
-.searchOrder .input--search {
-  margin-right: 1rem;
-  background: #fff url("/img/icon-search.png") 5% center no-repeat;
-}
-@media only screen and (max-width: 1200px) {
-  .searchOrder .input--search {
-    margin-right: 0;
-    margin-bottom: 1rem;
-    width: 100%;
-    text-align: center;
-  }
 }
