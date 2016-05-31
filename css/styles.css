@@ -270,13 +270,22 @@ body {
   margin-bottom: 0;
   padding: 0.25rem 0.75rem;
   border-radius: 4px;
+  color: #fff;
+  background-color: #bebebe;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 1px;
-  background-color: #33c96f;
-  color: #fff;
   font-size: 12px;
+}
+.status--captured {
+  background-color: #f89265;
+}
+.status--authorized {
+  background-color: #32aae6;
+}
+.status--shipped {
+  background-color: #33c96f;
 }
 .searchOrder {
   font-size: 13px;
