@@ -369,6 +369,7 @@ body {
 }
 .card-orderDetails-info {
   float: left;
+  margin-right: 2rem;
 }
 .card-orderDetails-status {
   float: right;
@@ -386,6 +387,7 @@ body {
 }
 .card-orderTracking-shipment {
   float: left;
+  margin-right: 2rem;
 }
 @media only screen and (max-width: 1200px) {
   .card-orderTracking-shipment {
@@ -529,6 +531,13 @@ body {
 }
 .table td:first-child {
   text-align: left;
+}
+.table a {
+  color: inherit;
+  text-decoration: none;
+}
+.table a:hover {
+  text-decoration: underline;
 }
 .table-tracking td {
   width: 20%;
