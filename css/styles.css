@@ -442,10 +442,14 @@ body {
   margin-left: auto;
   text-align: center;
 }
-.mainSearch .card-title {
+.mainSearch-title {
+  background-color: none;
+  color: #2d2d2d;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
 }
 .searchOrder {
   font-size: 13px;
