@@ -1,30 +1,26 @@
 .searchOrder
   font-size 13px
   
-  +below($desktop)
-    text-align center
-  
   .input
     shadow()
-    padding .5rem 3rem
+    width 60%
+    // padding .5rem 1.5rem
     appearance none
     border 0
-    border-radius 4px
   
     &--search
-      margin-right 1rem
-      background white url('/img/icon-search.png') 5% center no-repeat
       
+      +above($desktop)
+        margin-right 1rem
+
       +below($desktop)
-        margin-right 0
         margin-bottom 1rem
         width 100%
         text-align center
         
   &--index
+    width 100%
     
     .input--search
-      margin-right 0
       margin-bottom 1rem
       box-shadow none
-      border 1px solid rgba($blue, .5)
